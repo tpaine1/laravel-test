@@ -28,3 +28,24 @@ Stack trace:
 #10 C:\php-mvc-samples\laravel-test\public\index.php(49): Illuminate\Foundation\Application->run()
 #11 C:\php-mvc-samples\laravel-test\server.php(19): require_once('C:\\php-mvc-samp...')
 #12 {main} [] []
+[2014-10-17 19:44:24] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'forge'' in C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(7632): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(7628): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(7540): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(7495): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(167): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(135): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(371): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(98): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(61): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Console\Command.php(112): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 C:\php-mvc-samples\laravel-test\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\php-mvc-samples\laravel-test\vendor\laravel\framework\src\Illuminate\Console\Command.php(100): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\php-mvc-samples\laravel-test\vendor\symfony\console\Symfony\Component\Console\Application.php(889): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\php-mvc-samples\laravel-test\vendor\symfony\console\Symfony\Component\Console\Application.php(193): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\php-mvc-samples\laravel-test\vendor\symfony\console\Symfony\Component\Console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\php-mvc-samples\laravel-test\artisan(59): Symfony\Component\Console\Application->run()
+#18 {main} [] []
