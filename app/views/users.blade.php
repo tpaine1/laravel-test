@@ -5,10 +5,10 @@
     @foreach($users as $user)
         <!--<p>-->
         <tr>
-            <td>
+            <td style="width: 50%;">
                 {{ $user->name}}
             </td>
-            <td>
+            <td style="width: 50%;">
                 {{ $user->email }}
             </td>
         </tr>           
