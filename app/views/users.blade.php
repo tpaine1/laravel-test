@@ -9,7 +9,7 @@
                 {{ $user->name}}
             </td>
             <td>
-                {{ $user-email }}
+                {{ $user->email }}
             </td>
         </tr>           
         <!--</p>-->
