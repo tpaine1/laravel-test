@@ -3,7 +3,7 @@
 @section('content')
 <ol style="text-align: center;">
     @foreach($users as $user)
-    <li>            
+    <li style="text-align: center;">            
         {{ $user->name }} -- 
         {{ $user->email}}
     </li>
