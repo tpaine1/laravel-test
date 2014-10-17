@@ -3,7 +3,7 @@
         <div style="text-align: center;">
             <h1>Users List</h1>
             <div style="margin: auto;">
-                <table>
+                <table style="border: solid black;">
                     <tr>
                         <td style="width: 100px;">
                             <h3>Name</h3>
