@@ -1,0 +1,15 @@
+[2014-10-17 18:58:16] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\php-mvc-samples\laravel-test\bootstrap\compiled.php:5680
+Stack trace:
+#0 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\php-mvc-samples\laravel-test\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\php-mvc-samples\laravel-test\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 C:\php-mvc-samples\laravel-test\server.php(19): require_once('C:\\php-mvc-samp...')
+#12 {main} [] []
