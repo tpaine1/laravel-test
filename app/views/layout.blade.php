@@ -1,7 +1,6 @@
 <html>
     <body>
-        <!--<h1>Laravel Quickstart</h1>-->
-        <h3>Name</h3><h3>Email</h3>
+        <h1>Users List</h1>
         
         @yield('content')
     </body>
