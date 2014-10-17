@@ -1,22 +1,24 @@
 @extends('layout')
 
 @section('content')
-<table style="width: 100%; text-align: center;">
-    @foreach($users as $user)
-        <!--<p>-->
-    <tr>
-        <td style="width: 25%;"></td>
-        <td style="width: 25%;">
-            {{ $user->id }}.
-            {{ $user->name}}
-        </td>
-        <td style="width: 25%;">
-            {{ $user->email }}
-        </td>
-        <td style="width: 25%;"></td>
-    </tr>           
-    <!--</p>-->
-    @endforeach
-</table>
+<div style="text-align: center;">
+    <table>
+        @foreach($users as $user)
+            <!--<p>-->
+        <tr>
+            <td></td>
+            <td>
+                {{ $user->id }}.
+                {{ $user->name}}
+            </td>
+            <td>
+                {{ $user->email }}
+            </td>
+            <td></td>
+        </tr>           
+        <!--</p>-->
+        @endforeach
+    </table>
+</div>
 @stop
 

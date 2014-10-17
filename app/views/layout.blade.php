@@ -3,16 +3,16 @@
         <div style="text-align: center;">
             <h1>Users List</h1>
             <div style="margin: auto;">
-                <table style="width: 100%; text-align: center;">
+                <table>
                     <tr>
-                        <td style="width: 25%;"></td>
-                        <td style="width: 25%;">
+                        <td></td>
+                        <td>
                             <h3>Name</h3>
                         </td>
-                        <td style="width: 25%;">
+                        <td>
                             <h3>Email</h3>
                         </td>
-                        <td style="width: 25%;"></td>
+                        <td></td>
                     </tr>
                 </table>
             </div>
