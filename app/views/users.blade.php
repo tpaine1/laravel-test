@@ -2,23 +2,14 @@
 
 @section('content')
 <div style="text-align: center;">
-    <table>
+    <ol>
         @foreach($users as $user)
-            <!--<p>-->
-        <tr>
-            <td></td>
-            <td>
-                {{ $user->id }}.
-                {{ $user->name}}
-            </td>
-            <td>
-                {{ $user->email }}
-            </td>
-            <td></td>
-        </tr>           
-        <!--</p>-->
+        <li>            
+            {{ $user->name }}
+            {{ $user->email}}
+        </li>
         @endforeach
-    </table>
+    </ol>
 </div>
 @stop
 
